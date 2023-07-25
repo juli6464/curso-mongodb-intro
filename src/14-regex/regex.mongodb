@@ -1,0 +1,34 @@
+use("platzi_store")
+
+// db.inventory.find({
+//   "item.description": "Single line description."
+// })
+
+// db.inventory.find({
+//   "item.description": { $regex: /line/ }
+// })
+
+//mayus and minus
+// db.inventory.find({
+//   "item.description": { $regex: /LINE/i }
+// })
+
+//finish with word
+// db.inventory.find({
+//   "item.description": { $regex: /line$/i }
+// })
+
+//start word
+// db.inventory.find({
+//   "item.description": { $regex: /^single/i }
+// })
+
+//start with s letter
+// db.inventory.find({
+//   "item.description": { $regex: /^s/i }
+// })
+
+//start with s letter ind second line /n
+db.inventory.find({
+  "item.description": { $regex: /^s/im }
+})
